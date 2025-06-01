@@ -12,7 +12,7 @@ public class fCitasMedicas {
    public void Registrar(vCitasMedicas dts){
    
        try {
-          CallableStatement csta=cn.prepareCall("{call usp_RegistroCitasMedicas(?,?,?,?,?,?,?)}");
+          CallableStatement csta=cn.prepareCall("{call usp_InsertarCita (?,?,?,?,?,?,?)}");
           csta.setString(1, dts.getMotivoCita());
           csta.setString(2, dts.getEspecialidad());
           csta.setString(3, dts.getMedicoDisponible());

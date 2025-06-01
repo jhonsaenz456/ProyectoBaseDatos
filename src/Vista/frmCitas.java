@@ -62,7 +62,7 @@ void mostrar(){
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("REGISTRO DE CITAS ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 190, 70));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 190, 70));
 
         jLabel2.setText("Sede");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, -1));
@@ -95,7 +95,7 @@ void mostrar(){
 
         jLabel7.setText("Detalles Registrados");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
-        getContentPane().add(txtMotivoCita, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 220, -1));
+        getContentPane().add(txtMotivoCita, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 220, -1));
 
         jLabel8.setText("Especialidad");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, -1));
@@ -118,6 +118,7 @@ void mostrar(){
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 880, 300));
 
+        btnContinuar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/continue256_24871.png"))); // NOI18N
         btnContinuar.setText("CONTINUAR");
         btnContinuar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +127,7 @@ void mostrar(){
         });
         getContentPane().add(btnContinuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 620, 150, 60));
 
+        btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cashier_machine_cash_register_pos_icon_225201.png"))); // NOI18N
         btnRegistrar.setText("REGISTRAR");
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,13 +136,14 @@ void mostrar(){
         });
         getContentPane().add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 620, 150, 60));
 
+        btnRetroceder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/back_12955.png"))); // NOI18N
         btnRetroceder.setText("RETROCEDER");
         btnRetroceder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRetrocederActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRetroceder, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 620, 150, 60));
+        getContentPane().add(btnRetroceder, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 620, 170, 60));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
